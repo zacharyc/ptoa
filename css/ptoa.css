@@ -1,0 +1,16 @@
+
+.column {
+	display: inline-block;
+	width: calc(100% / 19);
+}
+
+.item {
+	padding: 10px;
+	text-align: center;
+	border:1px solid grey;
+}
+
+.item .symbol {
+	display: block;
+	color: blue;
+}
