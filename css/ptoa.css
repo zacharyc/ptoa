@@ -1,16 +1,81 @@
 
+:root {
+	--main-item-size: 100px;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3 {
+	/*font-family: 'Lobster', cursive;*/
+}
+
+@media (min-width: 85.4rem){
+    .content{
+        width:85rem;
+    }
+}
+@media (max-width: 85.4rem){
+    .content{
+        width:64rem;
+    }
+}
+@media (max-width: 65rem){
+    .content{
+        width:100%;
+        padding:0 1rem;
+    }
+}
+
+.content {
+	margin: 0 auto;
+}
+.wrapper {
+	/*width: 2048px;*/
+	border: 1px solid red;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
 .column {
 	display: inline-block;
-	width: calc(100% / 19);
+	text-align: center;
+	width: 100px;
+}
+
+.column h2 {
+	width: 90%;
+	font-size: 30px;
+    font-size: .85vw;
+    white-space: normal;
+    text-align: center;
 }
 
 .item {
-	padding: 10px;
-	text-align: center;
+	/*padding: 10px;*/
 	border:1px solid grey;
+	position: relative;
+	width: var(--main-item-size);
+	height: var(--main-item-size);
+	white-space: normal;
+	/*height: calc(width * 8);*/
+	/*height:200px;*/
 }
 
-.item .symbol {
+/*.item:before {
+	content: "";
 	display: block;
-	color: blue;
+	padding-top: 100%;
+}
+*/
+.item .symbol {
+	/*font-family: 'Lobster', cursive;*/
+	font-size: 2em;
+	font-weight: 1000;
+	display: block;
+}
+
+.item .name {
+	/*display: none;*/
 }
