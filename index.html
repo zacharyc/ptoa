@@ -13,10 +13,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/ptoa.css">
 
+    <script src="javascript/elements.json"></script>
+    <script src="javascript/ptoa.js"></script>
+
+    <script type="text/javascript">
+      <!-- body.onload = load; -->
+      console.log("what the what");
+      // debugger;
+    </script>
+
     <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
   </head>
 
-  <body>
+  <body onload="load()">
     <header>
       <div class="content">
         <h1>The Periodic Table Of Acro</h1>
@@ -27,7 +36,7 @@
       <p>This is a table of acro poses that you can use for easily describing your flows.</p>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper" id="elementsWrapper">
       <div class="column">
       <h2>Alphabet of Acro</h2>
       <div class="item">

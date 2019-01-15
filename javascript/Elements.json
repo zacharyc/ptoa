@@ -1,5 +1,5 @@
-{
-  "columbns" : [
+var elements = {
+  "columns" : [
     {
       "columnTitle": "Alphabet of Acro",
       "elements" : [
