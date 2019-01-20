@@ -61,25 +61,24 @@ h1, h2, h3 {
 }
 
 .item {
-	/*padding: 10px;*/
 	border:1px solid grey;
 	position: relative;
 	width: var(--main-item-size);
 	height: var(--main-item-size);
 	white-space: normal;
 	
-	/*display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;*/
-	/*height: calc(width * 8);*/
-	/*height:200px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .itemName {
-	vertical-align: middle;
 	display: inline-block;
+	
 	color:blue;
+	height: auto;
+	width: auto;
+	border: 1px solid;
 }
 /*.item:before {
 	content: "";
