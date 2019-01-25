@@ -1,6 +1,7 @@
 
 :root {
 	--main-item-size: 100px;
+	--main-item-size-wide: 300px;
 }
 
 body {
@@ -43,6 +44,16 @@ h1, h2, h3 {
 	margin: auto;
 }
 
+.wrapper.downwards {
+	color: red;
+	flex-direction: row;
+	white-space: normal;
+	overflow-x: none;
+	align-items: flex-start;
+	max-width: calc(var(--main-item-size-wide) + 5);
+	display:block;
+}
+
 .column {
 	display: flex;
 	flex-direction: column;
@@ -50,6 +61,12 @@ h1, h2, h3 {
 	width: 100px;
 	margin:auto;
 	margin-bottom: 0;
+}
+
+.wrapper.downwards .column {
+	/*flex-direction: row;*/
+	color: black;
+	width: var(--main-item-size-wide);
 }
 
 .column h2 {
@@ -68,8 +85,13 @@ h1, h2, h3 {
 	white-space: normal;
 	
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	justify-content: center;
+}
+
+.wrapper.downwards .item {
+	width: var(--main-item-size-wide);
+	height: var(--main-item-size-wide);
 }
 
 .itemName {
